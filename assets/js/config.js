@@ -19,7 +19,7 @@ window.SITE_CONFIG = {
     faxDisplay: "919-498-0188",
     faxTel: "+19194980188"
   },
-  email: "benhavenfire@charter.net",
+  email: "info@bes13.com",
   mailingAddress: {
     line1: "P.O. Box 301",
     line2: "Olivia, NC 28368"

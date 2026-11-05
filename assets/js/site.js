@@ -96,7 +96,7 @@
     }
   };
 
-  var email = clean(cfg.email) || "benhavenfire@charter.net";
+  var email = clean(cfg.email) || "info@bes13.com";
 
   document.querySelectorAll("form.js-form").forEach(function (form) {
     var meta = formMeta[form.getAttribute("data-form")];

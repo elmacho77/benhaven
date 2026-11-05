@@ -47,7 +47,7 @@ The header mark is `assets/images/mark.svg`. The favicon is `assets/favicon.svg`
 
 ### Formspree
 
-The contact form and the join form look like forms today. Until a real Formspree endpoint is saved, submitting one opens the visitor’s email app, addressed to benhavenfire@charter.net.
+The contact form and the join form look like forms today. Until a real Formspree endpoint is saved, submitting one opens the visitor’s email app, addressed to info@bes13.com.
 
 Herschel, to turn on online delivery:
 
@@ -83,7 +83,6 @@ Do not invent these. Leave the “coming soon” wording until they are confirme
 - Official logo file
 - Permission to publish leadership, board, or member names and photos
 - A current Station 3 photograph, and department-owned photos to replace the Station 1 and Station 2 reference images
-- Confirmation that benhavenfire@charter.net still reaches the department
 - Formspree form ID or IDs
 - News the department wants posted, and any incident summaries (no patient or caller details)
 - Current apparatus list and photos
