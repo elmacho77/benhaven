@@ -35,7 +35,7 @@ Phones, banners, and forms are in `assets/js/config.js`. The same phone numbers 
 Both are off until someone turns them on.
 
 - Set `emergencyBanner.active` to `true` and write a plain-text `message` for a red notice on every page.
-- Set `burnBan.active` to `true` and edit the message for a gold burn-ban notice. The same switch drives Home, Burn Permits, and Alerts.
+- Set `burnBan.active` to `true` and edit the message for a dark grey burn-ban notice. The same switch drives Home, Burn Permits, and Alerts.
 - Set `active` back to `false` when the notice ends.
 - Do not put patient details, private addresses, or member names in a banner.
 
@@ -43,7 +43,7 @@ Publish the change on the `main` branch. GitHub Pages updates from that branch.
 
 ### Logo
 
-The header mark is `assets/images/mark.svg`. The favicon is `assets/favicon.svg`, with PNG copies in `assets/icons/`. Replace those files when the department provides an official logo. Keep the department name as text beside the mark.
+The header uses the department logo at `assets/images/logo.png`. Favicon sizes are in `assets/icons/`. Replace those files if a new logo file is issued. The department name stays as text beside the mark.
 
 ### Formspree
 
@@ -80,7 +80,6 @@ Herschel, to turn on online delivery:
 
 Do not invent these. Leave the “coming soon” wording until they are confirmed.
 
-- Official logo file
 - Permission to publish leadership, board, or member names and photos
 - A current Station 3 photograph, and department-owned photos to replace the Station 1 and Station 2 reference images
 - Formspree form ID or IDs

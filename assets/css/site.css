@@ -1,20 +1,21 @@
 /* Benhaven Emergency Services
-   Deep red, navy, white, gold. Mobile first. */
+   Firehouse red and dark grey. Mobile first. */
 
 :root {
-  --navy: #0e2240;
-  --navy-deep: #081628;
-  --red: #8c1d18;
-  --gold: #e2bc4a;
-  --gold-deep: #f3e2a8;
-  --ink: #1b2430;
-  --muted: #3a4656;
-  --paper: #f3efe7;
+  --navy: #242424;
+  --navy-deep: #141414;
+  --red: #9b1c1c;
+  --red-hot: #b42318;
+  --gold: #ffd5d5;
+  --gold-deep: #ffffff;
+  --ink: #1a1a1a;
+  --muted: #3d3d3d;
+  --paper: #f2f2f2;
   --white: #ffffff;
-  --line: #e0d8cc;
-  --focus: #f3e2a8;
+  --line: #d4d4d4;
+  --focus: #ffffff;
   --max: 72rem;
-  --header-offset: 7.5rem;
+  --header-offset: 8rem;
   color-scheme: light;
 }
 
@@ -113,7 +114,7 @@ a:hover {
   font-weight: 700;
   text-decoration: none;
   padding: 0.75rem 1rem;
-  border: 3px solid var(--gold);
+  border: 3px solid var(--red);
 }
 
 .skip-link:focus {
@@ -138,8 +139,8 @@ a:hover {
 }
 
 .stripe {
-  height: 0.4rem;
-  background: linear-gradient(90deg, var(--red) 0 72%, var(--gold) 72% 100%);
+  height: 0.45rem;
+  background: var(--red-hot);
 }
 
 .utility {
@@ -185,15 +186,15 @@ a:hover {
 }
 
 .utility-911 {
-  background: var(--gold);
-  color: var(--navy) !important;
+  background: var(--red-hot);
+  color: #fff !important;
   text-decoration: none !important;
   padding: 0.35rem 0.75rem;
-  border: 2px solid #c9a227;
+  border: 2px solid #8e1612;
 }
 
 .utility-911:hover {
-  background: var(--gold-deep);
+  background: #8e1612;
 }
 
 .site-header {
@@ -227,16 +228,15 @@ a:hover {
 }
 
 .brand-mark {
-  width: 48px;
-  height: 48px;
+  width: 72px;
   flex: none;
 }
 
 .brand-mark img,
 .brand-mark svg {
   display: block;
-  width: 48px;
-  height: 48px;
+  width: 72px;
+  height: auto;
 }
 
 .brand-name {
@@ -344,12 +344,13 @@ a:hover {
 }
 
 .banner--burn {
-  background: var(--gold);
-  color: var(--navy);
+  background: var(--navy);
+  color: #fff;
+  box-shadow: inset 6px 0 0 var(--red-hot);
 }
 
 .banner--burn a {
-  color: var(--navy);
+  color: #fff;
 }
 
 .hero {
@@ -425,7 +426,7 @@ a:hover {
   bottom: 0;
   margin: 0;
   padding: 0.45rem 1rem;
-  background: rgba(8, 22, 40, 0.88);
+  background: rgba(20, 20, 20, 0.88);
   color: #fff;
   font-size: 1rem;
 }
@@ -459,7 +460,7 @@ a:hover {
 
 .crumbs li:not(:last-child)::after {
   content: "/";
-  color: #c5d0de;
+  color: #c4c4c4;
 }
 
 .section {
@@ -507,14 +508,14 @@ a:hover {
 }
 
 .btn-gold {
-  background: var(--gold);
-  color: var(--navy);
-  border-color: #c9a227;
+  background: var(--red-hot);
+  color: #fff;
+  border-color: #8e1612;
 }
 
 .btn-gold:hover {
-  background: var(--gold-deep);
-  color: var(--navy);
+  background: #8e1612;
+  color: #fff;
 }
 
 .btn-navy {
@@ -612,7 +613,7 @@ a:hover {
 }
 
 .station-photo {
-  background: #e7e1d6;
+  background: #e8e8e8;
   margin: -1.1rem -1.15rem 1rem;
   border-bottom: 1px solid var(--line);
   overflow: hidden;
@@ -678,7 +679,7 @@ a:hover {
 }
 
 .note {
-  border-left: 5px solid var(--gold);
+  border-left: 5px solid var(--red-hot);
 }
 
 .callout-911 {
@@ -788,7 +789,7 @@ a:hover {
   width: 100%;
   min-height: 48px;
   padding: 0.55rem 0.7rem;
-  border: 2px solid #6d6458;
+  border: 2px solid #5c5c5c;
   background: #fff;
   color: var(--ink);
   font: inherit;
@@ -809,7 +810,7 @@ a:hover {
 }
 
 ::placeholder {
-  color: #4e5966;
+  color: #4a4a4a;
   opacity: 1;
 }
 
@@ -886,7 +887,7 @@ a:hover {
 
 .footer-motto {
   margin: 0.15rem 0 0.6rem;
-  color: var(--gold);
+  color: #ffb4b4;
   font-weight: 800;
 }
 
@@ -1033,6 +1034,11 @@ h2, h3, .section {
 
   .utility-links a {
     justify-content: center;
+  }
+
+  .brand-mark,
+  .brand-mark img {
+    width: 58px;
   }
 }
 
