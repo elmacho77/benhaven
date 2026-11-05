@@ -38,6 +38,9 @@
     }
   }
 
+  var quiet = document.getElementById("announce-default");
+  if (quiet && active.length) quiet.hidden = true;
+
   var stateTitle = document.getElementById("alerts-state-title");
   var stateCopy = document.getElementById("alerts-state-copy");
   if (stateTitle && stateCopy && active.length) {
