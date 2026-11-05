@@ -24,6 +24,12 @@ window.SITE_CONFIG = {
     line1: "P.O. Box 301",
     line2: "Olivia, NC 28368"
   },
+  /* Header announcement strip. Set active to false when the notice ends. */
+  announcement: {
+    active: true,
+    title: "Public announcement",
+    message: "Annual Board Meeting November 16, 2026 @ 7pm at Station 3."
+  },
   /* Red banner on every page. Leave active false until there is a real notice. */
   emergencyBanner: {
     active: false,

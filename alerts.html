@@ -31,7 +31,7 @@
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
   <div class="announce" id="announce-default">
-    <p class="wrap">No public notice is posted right now. <a href="alerts.html">How alerts work</a>.</p>
+    <p class="wrap"><strong>Public announcement</strong> Annual Board Meeting November 16, 2026 @ 7pm at Station 3.</p>
   </div>
   <div id="site-banners"></div>
   <noscript>
@@ -79,21 +79,22 @@
     </div>
   </header>
   <main id="main" tabindex="-1">
-<header class="page-hero"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Alerts</li></ol></nav><h1>Alerts</h1><p class="lede">Website notices appear in a banner above the header. If you do not see one, nothing is posted.</p></div></header>
+<header class="page-hero"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Alerts</li></ol></nav><h1>Alerts</h1><p class="lede">Website notices appear in the strip at the top of every page.</p></div></header>
 
     <section class="section">
       <div class="wrap prose">
         <div class="empty-card">
-          <h2 id="alerts-state-title">Nothing is posted right now</h2>
-          <p id="alerts-state-copy">If a red emergency banner or a dark grey burn-ban banner is not showing above the site header, the department has not posted a website alert.</p>
+          <h2 id="alerts-state-title">A notice is posted</h2>
+          <p id="alerts-state-copy">Annual Board Meeting November 16, 2026 @ 7pm at Station 3. Read the strip at the top of this page.</p>
         </div>
         <h2>How banners work</h2>
-        <p>Two switches live in one configuration file, <code>assets/js/config.js</code>, in the website project.</p>
+        <p>Three switches live in one configuration file, <code>assets/js/config.js</code>, in the website project.</p>
         <ul>
+          <li><strong>Public announcement.</strong> Set <code>announcement.active</code> to <code>true</code> and write the message. It appears in the dark strip at the top of every page. It is on now for the November 16, 2026 board meeting. Set <code>active</code> to <code>false</code> after the meeting.</li>
           <li><strong>Emergency banner.</strong> Set <code>emergencyBanner.active</code> to <code>true</code> and write a plain-text <code>message</code>. The banner is red and shows on every page. It is for a short public notice the department wants seen immediately.</li>
           <li><strong>Burn-ban banner.</strong> Set <code>burnBan.active</code> to <code>true</code> and edit the message. The banner is dark grey with a red stripe. The same switch drives the home page, this page, and the burn permits page.</li>
         </ul>
-        <p>Both switches are off by default. To post a notice, edit the file, publish it on the main branch of the website, and set <code>active</code> back to <code>false</code> when the notice ends. Do not put private information, patient details, or member names in a banner.</p>
+        <p>To post or remove a notice, edit the file and publish it on the main branch. Do not put private information, patient details, or member names in a banner.</p>
         <p>A banner on this website does not replace 911, a county emergency notice, or a burn ban issued by the N.C. Forest Service. If you are unsure, call <a href="tel:+19194999511">919-499-9511</a>. If you need help now, dial 911.</p>
         <p>This page does not keep an archive of past incidents. News that the department chooses to publish lives on the <a href="news.html">news page</a>.</p>
       </div>

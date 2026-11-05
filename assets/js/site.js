@@ -23,6 +23,18 @@
 
   var host = document.getElementById("site-banners");
   var active = [];
+  var announce = document.getElementById("announce-default");
+  if (announce && cfg.announcement && cfg.announcement.active && clean(cfg.announcement.message)) {
+    announce.replaceChildren();
+    var announceText = document.createElement("p");
+    announceText.className = "wrap";
+    var announceTitle = document.createElement("strong");
+    announceTitle.textContent = clean(cfg.announcement.title) || "Public announcement";
+    announceText.appendChild(announceTitle);
+    announceText.appendChild(document.createTextNode(" " + clean(cfg.announcement.message)));
+    announce.appendChild(announceText);
+    active.push("announcement");
+  }
   if (host && cfg.emergencyBanner && cfg.emergencyBanner.active) {
     var emergencyMessage = clean(cfg.emergencyBanner.message);
     if (emergencyMessage) {
@@ -39,7 +51,8 @@
   }
 
   var quiet = document.getElementById("announce-default");
-  if (quiet && active.length) quiet.hidden = true;
+  var bannerOnly = active.indexOf("announcement") === -1 && (active.indexOf("emergency") !== -1 || active.indexOf("burn") !== -1);
+  if (quiet && bannerOnly) quiet.hidden = true;
 
   var stateTitle = document.getElementById("alerts-state-title");
   var stateCopy = document.getElementById("alerts-state-copy");

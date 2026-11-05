@@ -30,9 +30,11 @@ The custom 404 page uses `/benhaven/` links so it matches GitHub Pages. The othe
 
 Phones, banners, and forms are in `assets/js/config.js`. The same phone numbers are also written in the HTML so they still show if JavaScript is off. Change both places if a number changes.
 
-### Emergency banner and burn ban
+### Announcement strip, emergency banner, and burn ban
 
-Both are off until someone turns them on.
+The header strip is on for the annual board meeting: November 16, 2026 at 7 p.m. at Station 3. Set `announcement.active` to `false` in `assets/js/config.js` after the meeting, and change the sentence in each page’s announcement strip so it still reads correctly if JavaScript is off.
+
+The emergency banner and the burn-ban banner are off until someone turns them on.
 
 - Set `emergencyBanner.active` to `true` and write a plain-text `message` for a red notice on every page.
 - Set `burnBan.active` to `true` and edit the message for a dark grey burn-ban notice. The same switch drives Home, Burn Permits, and Alerts.
