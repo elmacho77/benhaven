@@ -2,7 +2,15 @@
 
 Public website for Benhaven Emergency Services (Benhaven Fire/Rescue), also known as Lucky 13. Static HTML, CSS, and JavaScript for GitHub Pages.
 
-Live site: https://elmacho77.github.io/benhaven/
+Intended address: https://elmacho77.github.io/benhaven/
+
+The site is on the `main` branch. GitHub Pages has to be switched on once by someone who can administer the repository. The credential used to publish this commit cannot change that setting (the Pages API returned 403).
+
+1. Open https://github.com/elmacho77/benhaven/settings/pages
+2. Under Build and deployment, choose **Deploy from a branch**.
+3. Branch: **main**. Folder: **/ (root)**. Save.
+
+The first deploy usually appears at the address above within a few minutes. Leave the source on `main` and `/` so later pushes publish themselves.
 
 In an emergency, dial 911. The non-emergency phone for every station is 919-499-9511.
 
