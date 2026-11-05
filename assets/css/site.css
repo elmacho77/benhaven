@@ -247,7 +247,12 @@ a:hover {
   text-transform: uppercase;
 }
 
-.social-slot {
+.social-slot,
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.15rem 1rem;
   margin: 0;
 }
 
