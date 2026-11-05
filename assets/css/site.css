@@ -249,9 +249,30 @@ a:hover {
 
 .social-slot {
   margin: 0;
-  max-width: 18rem;
-  color: var(--muted);
-  font-size: 1rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 44px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.social-slot .social-link {
+  color: var(--ink);
+}
+
+.social-link svg {
+  width: 1.35rem;
+  height: 1.35rem;
+  fill: currentColor;
+  flex: none;
+}
+
+.social-link:hover {
+  text-decoration: underline;
 }
 
 .nav-bar {

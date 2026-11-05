@@ -80,7 +80,7 @@ Herschel, to turn on online delivery:
 
 Do not invent these. Leave the “coming soon” wording until they are confirmed.
 
-- Social media accounts, if they should be linked in the masthead
+- Any social accounts besides the department Facebook page
 - County, mutual-aid, and partner links for the footer
 - Permission to publish leadership, board, or member names and photos
 - A current Station 3 photograph, and department-owned photos to replace the Station 1 and Station 2 reference images
