@@ -167,17 +167,29 @@ a:hover {
 .banner {
   background: var(--charcoal);
   color: #fff;
-  padding: 0.7rem 0;
+  padding: 0.7rem 1rem;
 }
 
-.announce p,
+.announce {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .banner p {
   margin: 0;
 }
 
-.announce,
-.announce p,
+.announce p {
+  width: min(48rem, 100%);
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .announce a {
+  display: inline;
   text-align: center;
 }
 
