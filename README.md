@@ -87,7 +87,7 @@ Do not invent these. Leave the “coming soon” wording until they are confirme
 - Current apparatus list and photos
 - Paid job openings, if any, and the real requirements for volunteers
 - Whether Station 1 should show a separate phone. An older page listed 919-499-9611. This site uses 919-499-9511 for every station, as directed
-- The current way to request a burn permit, and the wording for any active burn ban
+- The wording for any active burn ban
 - Whether the older training rhythm (fire training on the second Monday, general meeting on the fourth Tuesday, EMS continuing education on varying dates) is still accurate
 - CPR or class dates
 - A coverage map, if one should be published
