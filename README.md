@@ -32,7 +32,7 @@ Phones, banners, and forms are in `assets/js/config.js`. The same phone numbers 
 
 ### Announcement strip, emergency banner, and burn ban
 
-The header strip is on for the annual board meeting: November 16, 2026 at 7 p.m. at Station 3. Set `announcement.active` to `false` in `assets/js/config.js` after the meeting, and change the sentence in each page’s announcement strip so it still reads correctly if JavaScript is off.
+The header strip is on for the annual board meeting and links to `news-annual-board-meeting-2026.html`. Set `announcement.active` to `false` in `assets/js/config.js` after November 16, 2026, and change the sentence in each page’s announcement strip so it still reads correctly if JavaScript is off.
 
 The emergency banner and the burn-ban banner are off until someone turns them on.
 

@@ -28,10 +28,15 @@
     announce.replaceChildren();
     var announceText = document.createElement("p");
     announceText.className = "wrap";
-    var announceTitle = document.createElement("strong");
-    announceTitle.textContent = clean(cfg.announcement.title) || "Public announcement";
-    announceText.appendChild(announceTitle);
-    announceText.appendChild(document.createTextNode(" " + clean(cfg.announcement.message)));
+    var announceHref = announce.getAttribute("data-announce-href") || cfg.announcement.href || "";
+    if (announceHref) {
+      var announceLink = document.createElement("a");
+      announceLink.href = announceHref;
+      announceLink.textContent = clean(cfg.announcement.message);
+      announceText.appendChild(announceLink);
+    } else {
+      announceText.textContent = clean(cfg.announcement.message);
+    }
     announce.appendChild(announceText);
     active.push("announcement");
   }

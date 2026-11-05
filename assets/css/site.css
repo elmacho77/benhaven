@@ -178,6 +178,9 @@ a:hover {
 .announce a,
 .banner a {
   color: #fff;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
 }
 
 .banner--emergency {
