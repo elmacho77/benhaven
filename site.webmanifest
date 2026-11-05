@@ -1,0 +1,25 @@
+{
+  "name": "Benhaven Emergency Services",
+  "short_name": "Benhaven",
+  "description": "Fire and EMS for the Olivia, Sanford, and Broadway area of North Carolina.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "browser",
+  "background_color": "#0E2240",
+  "theme_color": "#0E2240",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
