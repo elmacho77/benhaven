@@ -42,7 +42,10 @@
       <div class="wrap masthead-inner">
         <a class="brand" href="/benhaven/index.html">
           <!-- Official logo. Replace assets/images/logo.png if a new file is issued. -->
-          <span class="brand-mark"><img src="/benhaven/assets/images/logo.png" alt="" width="280" height="331"></span>
+          <span class="brand-mark"><picture>
+            <source type="image/webp" srcset="/benhaven/assets/images/logo-168.webp 168w, /benhaven/assets/images/logo-280.webp 280w" sizes="84px">
+            <img src="/benhaven/assets/images/logo.png" alt="" width="280" height="331" decoding="async">
+          </picture></span>
           <span class="brand-text">
             <span class="brand-name">Benhaven Emergency Services</span>
             <span class="brand-motto">Lucky 13 · Since 1982</span>
@@ -67,13 +70,13 @@
           <li><a href="/benhaven/join.html">Join</a></li>
           <li><a href="/benhaven/contact.html">Contact</a></li>
           </ul>
-        </nav>
-        <nav class="utility-nav" aria-label="Emergency and quick links">
+          <nav class="utility-nav" aria-label="Emergency and quick links">
           <ul class="utility-links">
             <li><a class="utility-911" href="tel:911">Dial 911</a></li>
             <li><a href="tel:+19194999511">Non-emergency 919-499-9511</a></li>
             <li><a href="/benhaven/alerts.html">Alerts</a></li>
           </ul>
+          </nav>
         </nav>
       </div>
     </div>

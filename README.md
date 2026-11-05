@@ -32,12 +32,13 @@ Phones, banners, and forms are in `assets/js/config.js`. The same phone numbers 
 
 ### Announcement strip, emergency banner, and burn ban
 
-The header strip is on for the annual board meeting and links to `news-annual-board-meeting-2026.html`. Set `announcement.active` to `false` in `assets/js/config.js` after November 16, 2026, and change the sentence in each page’s announcement strip so it still reads correctly if JavaScript is off.
+These notes are for the person updating the site. The public Alerts page does not mention this file.
 
-The emergency banner and the burn-ban banner are off until someone turns them on.
+The header strip is on for the annual board meeting and links to `news-annual-board-meeting-2026.html`. After November 16, 2026, set `announcement.active` to `false` in `assets/js/config.js`, and change the sentence in each page’s announcement strip so it still reads correctly if JavaScript is off.
 
-- Set `emergencyBanner.active` to `true` and write a plain-text `message` for a red notice on every page.
-- Set `burnBan.active` to `true` and edit the message for a dark grey burn-ban notice. The same switch drives Home, Burn Permits, and Alerts.
+- **Public announcement.** Set `announcement.active` to `true` and write `message`. It appears in the dark strip at the top of every page. `href` is the page the strip links to.
+- **Emergency banner.** Set `emergencyBanner.active` to `true` and write a plain-text `message`. The banner is red and shows on every page.
+- **Burn-ban banner.** Set `burnBan.active` to `true` and edit the message. The banner is dark grey with a red stripe. The same switch drives Home, Burn Permits, and Alerts.
 - Set `active` back to `false` when the notice ends.
 - Do not put patient details, private addresses, or member names in a banner.
 

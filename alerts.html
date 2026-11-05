@@ -42,7 +42,10 @@
       <div class="wrap masthead-inner">
         <a class="brand" href="index.html">
           <!-- Official logo. Replace assets/images/logo.png if a new file is issued. -->
-          <span class="brand-mark"><img src="assets/images/logo.png" alt="" width="280" height="331"></span>
+          <span class="brand-mark"><picture>
+            <source type="image/webp" srcset="assets/images/logo-168.webp 168w, assets/images/logo-280.webp 280w" sizes="84px">
+            <img src="assets/images/logo.png" alt="" width="280" height="331" decoding="async">
+          </picture></span>
           <span class="brand-text">
             <span class="brand-name">Benhaven Emergency Services</span>
             <span class="brand-motto">Lucky 13 · Since 1982</span>
@@ -67,36 +70,34 @@
           <li><a href="join.html">Join</a></li>
           <li><a href="contact.html">Contact</a></li>
           </ul>
-        </nav>
-        <nav class="utility-nav" aria-label="Emergency and quick links">
+          <nav class="utility-nav" aria-label="Emergency and quick links">
           <ul class="utility-links">
             <li><a class="utility-911" href="tel:911">Dial 911</a></li>
             <li><a href="tel:+19194999511">Non-emergency 919-499-9511</a></li>
             <li><a href="alerts.html">Alerts</a></li>
           </ul>
+          </nav>
         </nav>
       </div>
     </div>
   </header>
   <main id="main" tabindex="-1">
-<header class="page-hero"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Alerts</li></ol></nav><h1>Alerts</h1><p class="lede">Website notices appear in the strip at the top of every page.</p></div></header>
+<header class="page-hero"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Alerts</li></ol></nav><h1>Alerts</h1><p class="lede">Community notices show in the strip at the top of every page when the department posts them.</p></div></header>
 
     <section class="section">
       <div class="wrap prose">
         <div class="empty-card">
           <h2 id="alerts-state-title">A notice is posted</h2>
-          <p id="alerts-state-copy">The Annual Board Meeting will be held November 16, 2026 at 7pm at Station 3. <a href="news-annual-board-meeting-2026.html">Meeting details</a>.</p>
+          <p id="alerts-state-copy">The Annual Board Meeting for Benhaven Emergency Services will be held November 16, 2026 at 7pm at Station 3. <a href="news-annual-board-meeting-2026.html">Meeting details</a>.</p>
         </div>
-        <h2>How banners work</h2>
-        <p>Three switches live in one configuration file, <code>assets/js/config.js</code>, in the website project.</p>
+        <h2>What the banners mean</h2>
         <ul>
-          <li><strong>Public announcement.</strong> Set <code>announcement.active</code> to <code>true</code> and write the message. It appears in the dark strip at the top of every page. It is on now for the November 16, 2026 board meeting. Set <code>active</code> to <code>false</code> after the meeting.</li>
-          <li><strong>Emergency banner.</strong> Set <code>emergencyBanner.active</code> to <code>true</code> and write a plain-text <code>message</code>. The banner is red and shows on every page. It is for a short public notice the department wants seen immediately.</li>
-          <li><strong>Burn-ban banner.</strong> Set <code>burnBan.active</code> to <code>true</code> and edit the message. The banner is dark grey with a red stripe. The same switch drives the home page, this page, and the burn permits page.</li>
+          <li><strong>Public announcement.</strong> The dark strip at the top of the site. It is on now for the annual board meeting.</li>
+          <li><strong>Emergency notice.</strong> A red banner across the site. None is posted right now.</li>
+          <li><strong>Burn ban.</strong> A dark banner with a red stripe, used when open burning is suspended. None is posted right now. The <a href="burn-permits.html">burn permit guide</a> explains the state rules and how to select Harnett.</li>
         </ul>
-        <p>To post or remove a notice, edit the file and publish it on the main branch. Do not put private information, patient details, or member names in a banner.</p>
-        <p>A banner on this website does not replace 911, a county emergency notice, or a burn ban issued by the N.C. Forest Service. If you are unsure, call <a href="tel:+19194999511">919-499-9511</a>. If you need help now, dial 911.</p>
-        <p>This page does not keep an archive of past incidents. News that the department chooses to publish lives on the <a href="news.html">news page</a>.</p>
+        <p>A banner on this website is not a substitute for 911 or for a burn ban issued by the N.C. Forest Service. If you need help now, dial <a href="tel:911">911</a>. For a question that can wait, call <a href="tel:+19194999511">919-499-9511</a>.</p>
+        <p>This page does not list past incidents. Department news is on the <a href="news.html">news page</a>.</p>
       </div>
     </section>
     

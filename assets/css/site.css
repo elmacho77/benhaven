@@ -232,6 +232,7 @@ a:hover {
   flex: none;
 }
 
+.brand-mark picture,
 .brand-mark img {
   display: block;
   width: 84px;
@@ -300,10 +301,8 @@ a:hover {
 .nav-bar-inner {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  gap: 0.35rem 0.75rem;
+  justify-content: flex-start;
   min-height: 3.6rem;
   padding: 0.35rem 0;
 }
@@ -375,7 +374,7 @@ a:hover {
 }
 
 .utility-nav {
-  margin-left: auto;
+  margin: 0;
 }
 
 .utility-links {
@@ -1133,6 +1132,34 @@ h2, h3, .section {
   .site-nav a[aria-current="page"] {
     box-shadow: inset 0 -3px 0 var(--red);
   }
+
+  .utility-nav {
+    margin-left: auto;
+  }
+
+  .utility-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+@media (max-width: 71.99rem) {
+  .site-nav.is-open .utility-links {
+    display: block;
+  }
+
+  .site-nav.is-open .utility-links a {
+    display: flex;
+    text-decoration: none;
+    padding: 0.2rem 1rem;
+    border-bottom: 1px solid #2a2a2a;
+  }
+
+  .site-nav.is-open .utility-911 {
+    margin: 0.75rem 1rem;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1141,6 +1168,7 @@ h2, h3, .section {
   }
 
   .brand-mark,
+  .brand-mark picture,
   .brand-mark img {
     width: 68px;
   }

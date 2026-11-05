@@ -61,9 +61,9 @@
 
   var stateTitle = document.getElementById("alerts-state-title");
   var stateCopy = document.getElementById("alerts-state-copy");
-  if (stateTitle && stateCopy && active.length) {
+  if (stateTitle && stateCopy && (active.indexOf("emergency") !== -1 || active.indexOf("burn") !== -1)) {
     stateTitle.textContent = "A notice is posted";
-    stateCopy.textContent = "Read the banner at the top of this page. That banner is the department’s current website alert.";
+    stateCopy.textContent = "Read the banner at the top of this page, and call 919-499-9511 if you are unsure. Dial 911 if you need help now.";
   }
 
   var toggle = document.querySelector(".nav-toggle");
