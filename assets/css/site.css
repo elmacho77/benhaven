@@ -175,6 +175,12 @@ a:hover {
   margin: 0;
 }
 
+.announce,
+.announce p,
+.announce a {
+  text-align: center;
+}
+
 .announce a,
 .banner a {
   color: #fff;
